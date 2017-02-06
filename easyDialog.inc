@@ -52,7 +52,7 @@ stock Dialog_Close(playerid)
 stock Dialog_Open(playerid, function[], style, caption[], info[], button1[], button2[], {Float,_}:...)
 {
 	static
-	    string[4096],
+	    string[1024],
 		args
 	;
 
@@ -73,7 +73,7 @@ stock Dialog_Open(playerid, function[], style, caption[], info[], button1[], but
 			#emit PUSH.pri
 		}
 		#emit PUSH.S info
-		#emit PUSH.C 4096
+		#emit PUSH.C 1024
 		#emit PUSH.C string
 
 		#emit LOAD.S.pri 8
